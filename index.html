@@ -1,37 +1,57 @@
-<style>
-    /* إضافة تنسيق لزر التحميل */
-    .download-btn {
-        display: inline-block;
-        background-color: #28a745; /* لون أخضر */
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-    .download-btn:hover {
-        background-color: #218838;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض فيديوهاتي</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f9; padding: 20px; text-align: center; }
+        .container { max-width: 800px; margin: auto; }
+        .video-card { background: white; border-radius: 12px; padding: 15px; margin-bottom: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        video { width: 100%; border-radius: 8px; background: #000; }
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .download-btn:hover { background: #218838; }
+    </style>
+</head>
+<body>
 
-<div class="video-card">
-    <video controls src="video1.mp4"></video>
-    <div class="info">
-        <p>وصف الفيديو الأول</p>
-        <a href="video1.mp4" download="video1.mp4" class="download-btn">
-            📥 تحميل الفيديو
-        </a>
-    </div>
-</div>
+    <h1>🎬 معرض فيديوهاتي القابلة للتحميل</h1>
 
-<div class="video-card">
-    <video controls src="video2.mp4"></video>
-    <div class="info">
-        <p>وصف الفيديو الثاني</p>
-        <a href="video2.mp4" download="video2.mp4" class="download-btn">
-            📥 تحميل الفيديو
-        </a>
+    <div class="container">
+        <div class="video-card">
+            <video controls src="video1.mp4"></video>
+            <a href="video1.mp4" download class="download-btn">📥 تحميل الفيديو 1</a>
+        </div>
+
+        <div class="video-card">
+            <video controls src="video2.mp4"></video>
+            <a href="video2.mp4" download class="download-btn">📥 تحميل الفيديو 2</a>
+        </div>
+
+        <div class="video-card">
+            <video controls src="video3.mp4"></video>
+            <a href="video3.mp4" download class="download-btn">📥 تحميل الفيديو 3</a>
+        </div>
+
+        <div class="video-card">
+            <video controls src="video4.mp4"></video>
+            <a href="video4.mp4" download class="download-btn">📥 تحميل الفيديو 4</a>
+        </div>
+
+        <div class="video-card">
+            <video controls src="video5.mp4"></video>
+            <a href="video5.mp4" download class="download-btn">📥 تحميل الفيديو 5</a>
+        </div>
     </div>
-</div>
+
+</body>
+</html>
